@@ -1,7 +1,7 @@
 package demojava;
 
 public class TEACHER extends PERSON {
-
+    
     private float salary;
     
     public TEACHER() {}
