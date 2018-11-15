@@ -5,9 +5,7 @@
  */
 package demojava;
 
-import java.util.Scanner;
-
-public class DEMOJAVA{
+public class DEMOJAVA {
 
     public static void main(String[] args) {
         System.out.println("INFO OF STUDENT: ");
