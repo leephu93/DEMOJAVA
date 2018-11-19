@@ -67,7 +67,7 @@ public class DEMOJAVA {
             count++;
         } while (count <= 10);
         System.out.println("KẾT QUẢ CỦA MẢNG HIỆN TẠI: " + mang.toString());
-        float total1 = 0, total2 = 0, total3 = 0;
+        float total1 = 0, total2 = 0;
         for (int i = 0; i < 5; i++) {
             total1 = total1 + (float) mang.get(i);
         }
@@ -76,14 +76,6 @@ public class DEMOJAVA {
             total2 = total2 + (float) mang.get(i);
         }
         System.out.println("TỔNG 5 PHẦN TỬ CUỐI CÙNG CỦA MẢNG HIỆN TẠI: " + total2);
-        for (int i = 0; i < mang.size()+1; i++) {
-            if(i % 2 != 0){
-                total3 += (float)mang.get(i);
-        for (int i = 0; i < mang.size() + 1; i++) {
-            if (i % 2 != 0) {
-                total3 += (float) mang.get(i);
-            }
-        }
-        System.out.println("TỔNG CÁC PHẦN TỬ Ở VỊ TRÍ LẺ CỦA MẢNG HIỆN TẠI: " + total3);
+        System.out.println("TỔNG CÁC PHẦN TỬ Ở VỊ TRÍ LẺ CỦA MẢNG HIỆN TẠI: " + (total1 + total2));
     }
 }
