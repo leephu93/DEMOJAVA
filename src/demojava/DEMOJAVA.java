@@ -76,6 +76,9 @@ public class DEMOJAVA {
             total2 = total2 + (float) mang.get(i);
         }
         System.out.println("TỔNG 5 PHẦN TỬ CUỐI CÙNG CỦA MẢNG HIỆN TẠI: " + total2);
+        for (int i = 0; i < mang.size()+1; i++) {
+            if(i % 2 != 0){
+                total3 += (float)mang.get(i);
         for (int i = 0; i < mang.size() + 1; i++) {
             if (i % 2 != 0) {
                 total3 += (float) mang.get(i);
