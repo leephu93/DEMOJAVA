@@ -3,39 +3,60 @@ package demojava;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class SO {
+class SINHVIEN {
 
-    int num;
+    String hoten;
+    int tuoi;
+
+    SINHVIEN(String hoten, int tuoi) {
+        this.hoten = hoten;
+        this.tuoi = tuoi;
+    }
 }
 
 public class DEMOJAVA {
 
-    void DEMOJAVA() {
+    static int count = 0;
 
-    }
-
-    static void DEMOJAVA(int a, int b) {
-        System.out.println(a + b);
-    }
-
-    void DEMOJAVA(int a, int b, int c) {
-
-    }
-
-    static float congso(int a, int b) {
-        return a + b;
-    }
-
-    static float congso(int a, int b, int c) {
-        return a + b + c;
-    }
-
-    static float sum(SO so1, SO so2) {
-        return so1.num + so2.num;
+    static void SHOW(SINHVIEN sv) {
+        System.out.println("HỌ & TÊN --->>> "+sv.hoten);
+        System.out.println("TUỔI --->>> "+sv.tuoi);
+        count++;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        ArrayList ar = new ArrayList();
+        SINHVIEN[] sv = new SINHVIEN[2];
+//        sv[0] = new SINHVIEN("LÊ VĂN PHÚ", 21);
+//        sv[1] = new SINHVIEN("KIM NGUYỄN", 21);
+        for (SINHVIEN item : sv) {
+            System.out.print("NHẬP HỌ TÊN: ");
+            String hoten = scanner.nextLine();
+            System.out.print("NHẬP TUỔI: ");
+            int tuoi = Integer.valueOf(scanner.nextLine());
+            item = new SINHVIEN(hoten, tuoi);
+            SHOW(item);
+//            ar.add(item);
+        }
+//        System.out.println(ar.toString());
+//        for (Object item : ar) {
+//            if (item instanceof SINHVIEN) {
+//                System.out.println(((SINHVIEN) item).hoten);
+//                System.out.println(((SINHVIEN) item).tuoi);
+//            } else {
+//                System.out.println("FALSE");
+//            }
+//        }
+        
+//        SINHVIEN sv1 = new SINHVIEN();
+//        sv[0].hoten = "LÊ VĂN PHÚ";
+//        sv[0].tuoi = 21;
+//        SHOW(sv1);
+//        SINHVIEN sv2 = new SINHVIEN();
+//        SHOW(sv2);
+//        System.out.println(count);;
+
 //        System.out.println("INFO OF STUDENT: ");
 //        STUDENT sv1 = new STUDENT();
 //        sv1.insertINFO();
@@ -45,12 +66,6 @@ public class DEMOJAVA {
 //        TEACHER gv1 = new TEACHER();
 //        gv1.insertINFO();
 //        gv1.viewINFO();
-//        SO  so1 = new SO();
-//        so1.num = 1;
-//        SO  so2 = new SO();
-//        so2.num = 2;
-//        System.out.println(sum(so1, so2));
-//        DEMOJAVA(9, 10);
 
 //        ArrayList mang = new ArrayList();
 //        float val = 0;
